@@ -1,0 +1,86 @@
+#pedido
+{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    cOLOR: pink;
+}
+#nmcafe{
+    color: red;
+    height: 120px;
+}
+#letra{
+    color: black;
+    font-weight: bold;
+}
+#h2{
+    height: 30px;
+}
+#cor{
+    color: crimson;
+}
+#corcinza{
+    color: gray;
+}
+#texto{
+    font-style: oblique;
+    color: black;
+}
+#content {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    font-style: normal;
+}
+#center {
+    color: purple;
+    font-style: italic;
+    width: 80%;
+}
+#botao {
+	position: relative;
+	top: -6px;
+	border: 0;
+	transition: all 40ms linear;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#bt {
+    border:1px solid #25692A;
+    border-radius:15px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+}
+#centro{
+    text-align: center;
+    align-content: center;
+}
+#topnav{
+    align-content: center;
+    background-color: palevioletred;
+    overflow: hidden;
+}
+#topnav a {
+    align-content: center;
+    position: relative;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#topnav a:hover {
+    background-color: black;
+    color: brown;
+}
+#topnav a.active {
+    background-color: #FDF5E6;
+    color: black;
+}

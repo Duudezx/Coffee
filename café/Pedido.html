@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="estilo_css.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pedido</title>
+    <meta name="Pedido" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        
+</head>
+<body>
+    <body background="rosa.jpg"></body>
+    <div id="centro">
+            <div id="topnav">
+                <a class="active" href="café_boutique.html">Pagina Inicial</a>
+                <a class="active" href="Cardápio.html">Cardápio</a>
+                <a class="active" href="Pedido.html">Pedido</a>
+                <a class="active" href="cadastro.html">Cadastro</a>
+                <a class="active" href="https://www.google.com/maps/search/caf%C3%A9+boutique/@-24.6881486,-49.0273055,7z/data=!3m1!4b1">Localização</a>
+                <a class="active" href="avaliacao.html">Avaliação</a>
+            </div>
+        </div>
+        <body background=".\fotodecafé2.jpg">
+            <div id="letra">
+        <center><legend><h1> Faça aqui seu pedido!</h1></legend></center>
+        <center><form>
+            <fieldset>
+            <p>
+               <label> Café's:
+                    <select name="Café's" required="required">
+                        <optgroup label=" Café's ">
+                        <option value="1.0">Nenhum</option>
+                        <option value="1.1">Café Expresso</option>
+                        <option value="1.2">Café c/ Leite</option>
+                        <option value="1.3">Cappuccino</option>
+                        <option value="1.4">Café c/ Chocolate</option>
+                        <option value="1.5">Achocolatado</option>
+                        <option value="1.6">Sucos Naturais</option>
+                        <option value="1.7">Coca Cola</option>
+                        <option value="1.8">Água</option></optgroup>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Quantidade: <input type="number" name="quantidade" min="0" max="10" step="1">
+                    </label>
+            </p>
+                <legend> Adicionais: </legend>
+            <p>
+                    <label>
+                        <input type="checkbox" name="Chantilly" value="Chantilly"> Chantilly
+                    </label>
+            </p>
+            <p>
+                    <label>
+                        <input type="checkbox" name="Nutella" value="Nutella"> Nutella
+                    </label>
+            </p>
+            <p>
+                    <label>
+                        <input type="checkbox" name="Canela" value="Canela"> Canela
+                    </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="Baunilha" value="Baunilha"> Baunilha
+
+                </label>
+        </p>
+        </fieldset>
+        </form>
+        <form>
+                <fieldset>
+                <p>
+                    <div> <label> Salgados e Doces: </div>
+                        <select name="Salgados e Doces" required="required">
+                            <optgroup label=" Salgados e Doces">
+                            <option value="1.0">Nenhum</option>
+                            <option value="1.1">Pão De Queijo</option>
+                            <option value="1.2">Sanduiche</option>
+                            <option value="1.3">Croissant</option>
+                            <option value="1.4">Pão De Batata</option>
+                            <option value="1.5">Bolos</option>
+                            <option value="1.6">Salgados</option>
+                            <option value="1.7">Tapioca</option>
+                            <option value="1.8">Crepioca</option>
+                            <option value="1.9">Tortilhas Especiais</option></optgroup>
+                        </select>
+                    </labe>
+                </p>
+                <p>
+                    <label>
+                        Quantidade: <input type="number" name="quantidade" min="0" max="10" step="1">
+                    </label>
+                </p>
+                </fieldset>
+                </form>
+            </div>
+            </form></center>
+
+            <script type="text/javascript">    
+                function calculadora() {  
+                  
+                   var n1 = parseFloat(document.getElementById('n1').value);    
+                   var n2 = parseFloat(document.getElementById('n2').value);    
+                   var resultado = 0;  
+                   if (document.getElementsByName('operacao')[0].checked) {    
+                       resultado = n1 + n2;  
+                   }    
+                   if (document.getElementsByName('operacao')[1].checked) {    
+                       resultado = n1 - n2;    
+                   }    
+                   if (document.getElementsByName('operacao')[2].checked) {    
+                       resultado = n1 * n2;    
+                   }    
+                   if (document.getElementsByName('operacao')[3].checked) {    
+                       resultado = n1 / n2;    
+                   }    
+                   document.getElementById('resultado').value = resultado;    
+                }    
+            </script>    
+        
+        </head>    
+        <body>  
+            <form action="#">
+            <fieldset>
+                <h2>
+            <p>  
+                Valor: <input id="n1" type="text"><br>    
+                Quantidade: <input id="n2" type="text">  
+            </p>  
+            <p>  
+                <input type="radio" name="operacao" id="adicao" value="+"><label for="adicao">Adição</label><br>    
+                <input type="radio" name="operacao" id="subtracao" value="-"> <label for="subtracao">Subtração</label><br>  
+                <input type="radio" name="operacao" id="multiplicacao" value="*"> <label for="multiplicacao">Multiplicação</label><br>    
+                <input type="radio" name="operacao" id="divisao" value="/"> <label for="divisao">Divisão</label><br>   
+            </p>  
+            <p>  
+                Valor total a ser pago: $<input id="resultado" type="text">  <input type="button" value="Calcular" onclick="calculadora()"> 
+            </p>  
+            <p>  
+                    <label>
+                            <h2><a href="file:///E:/PW1/enviarpedido.html"><button type="button">enviar</button></a></h2>
+                    </label>
+            </p>  
+        </h2>
+            </fieldset>
+            </form> 
+</body>
+</html>
